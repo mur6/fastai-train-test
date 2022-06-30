@@ -28,3 +28,12 @@ dls = SegmentationDataLoaders.from_label_func(
     label_func=lambda o: base_dir / "train_masks" / f"{o.stem}.png",
     codes=np.array(["background", "hand", "mat"], dtype=str),
 )
+
+import timm
+import pprint
+
+# model = timm.create_model("resnet34")
+avail_pretrained_models = timm.list_models("vit*", pretrained=True)
+
+pprint.pprint(avail_pretrained_models)
+# all_densenet_models = timm.list_models()

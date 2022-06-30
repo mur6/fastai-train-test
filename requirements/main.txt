@@ -1,2 +1,2 @@
 fastai
-timm
+git+https://github.com/rwightman/pytorch-image-models.git
