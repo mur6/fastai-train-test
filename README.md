@@ -1,4 +1,4 @@
-# depth-dpt-test
+# fastai-test
 ## Install
 ```
 $ python3 -m venv .venv
